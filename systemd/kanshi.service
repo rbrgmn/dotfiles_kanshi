@@ -1,0 +1,11 @@
+[Unit]
+Description=Kanshi - Dynamic display configuration
+After=sway.service
+
+[Service]
+ExecStart=/usr/bin/kanshi
+Restart=always
+RestartSec=5
+
+[Install]
+WantedBy=default.target
